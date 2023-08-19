@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-security-policy" content="frame-src https://www.youtube.com/embed https://play.google.com/log?format=json&hasfast=true&authuser=0;">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Watch Party</title>
+</head>
+<body>
+    <h1>Watch Party</h1>
+    <section id="videoComponents">
+        <input
+            id="urlField"
+            type="text"
+            style="width: 300px;"
+            placeholder="Enter full YouTube URL or YouTube video ID."
+        />
+        <button id="playButton">Load Video</button>
+        <iframe
+            id="videoPlayer"
+            width="420"
+            height="315"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
